@@ -1,0 +1,49 @@
+body{
+    margin: 0;padding: 0;
+
+}
+.book_page{
+    width: 550px;
+    margin: 90px auto 0;
+    border: 1px solid rgb(184, 120, 155);
+}
+.chapter{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+span{
+    font-size: 33px;
+    font-weight: 900;
+    line-height: 80px;
+    text-align: center;
+    display: block;
+}
+h2{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.para{
+    padding-top: 64px;
+    text-align: justify;
+}
+.para::first-letter{
+    font-size: 40px;
+    /* font-size: 250%; */
+    /* padding: 0 0 0 px; */
+    /* margin-right: 6px; */
+    float: left;
+    
+}
+.page_no{
+    text-align: center;
+}
+.border
+{
+    margin: 10px auto;
+    border: 2px double black;
+    width:900px;
+    box-shadow: 3px 3px black;
+}
