@@ -1,0 +1,224 @@
+/* JAN 05
+Assignment 1 LAnding Page
+*/
+
+:root{
+--royal-blue: #3253e4;
+--pigeon-post: #b3c2da;
+--bg-color: #f4fafb;
+--danube: #708ecb;
+--comet: #5c5b76;
+--nevada: #666768;
+--manatee: #999a9d;
+--manatee: #8c8ba4;
+--malibu: #53acfc;
+--new:#252558;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro&display=swap');
+body{
+    background-color: var(--bg-color);
+    margin: 0;padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 1360px;
+    height: 768px;
+}
+.angle{
+    height: 124%;
+    width: 50%;
+    background-color: var(--royal-blue);
+    float: right;
+    transform: rotate(-38deg);
+    margin-right: -258px;
+    margin-top: -300px;
+    border-radius: 73px;
+}
+.logo
+{
+    /* background-color: red; */
+    display: inline-block;
+    margin: 10px 0 0 100px;
+    color: var(--new);
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Tahoma, Geneva, Verdana, sans-serif;
+}
+.app{
+    font-weight: normal;
+}
+.dot{
+    color: var(--royal-blue);
+   
+}
+.containt{
+    position: absolute;
+    /* background-color: red; */
+    display: inline-block;
+    height: 400px;
+    width: 350px;
+    padding: 20px;
+    top: 151px;
+    left: 107px;
+}
+h1{
+    font-size: 54px;
+    font-family: 'Open Sans', sans-serif;
+}
+.dw_btn{
+    background-color: var(--royal-blue) ;
+    color: var(--bg-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 9px;
+}
+.dw_btn:hover{
+    background-color: #252558;
+}
+
+.circle1
+{
+    position: absolute;
+    top: -20;
+    left: -50;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 228, 196, 0.804);
+    z-index: -1;
+    border-radius: 100px;
+}
+.circle2
+{
+    position: absolute;
+    top: -151px;
+    left: -129px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(39, 240, 206);
+    z-index: -2;
+    border-radius: 200px;
+}
+.circle3{
+    position: absolute;
+    top: 508px;
+    left: 737px;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(197, 163, 202, 0.804);
+    z-index: -1;
+    border-radius: 100px;
+}
+.mobile{
+    /* background-color: #3a70c7; */
+    position: absolute;
+    /* width: 200px;
+    height: 450px; */
+    top: 130px;
+    right: 199px;
+    /* border: 20px solid white; */
+    /* box-shadow: 1px 1px rgb(49, 49, 116),-1px 1px  3px rgb(26, 26, 111); */
+}
+.bg{
+    background-color: var(--royal-blue);
+    position: absolute;
+    position: absolute;
+    width: 250px;
+    height: 487px;
+    top: 170px;
+    right: 216px;
+    z-index: -1;
+    border-radius: 30px;
+    background: rgb(39,192,222);
+background: linear-gradient(25deg, rgba(39,192,222,1) 19%, rgba(131,171,213,1) 80%);
+
+}
+img{
+    width: auto;
+    height: 555px;
+    /* background-color: #3a57d8; */
+    border-radius: 30px;
+}
+.list{
+    position: absolute;
+    right: 368px;
+    top: 292px;
+    color: rgb(245, 229, 229);
+    font-size: 14px;
+}
+ul{
+    list-style-type: none
+}
+ul li{
+    padding-bottom: 20px;
+}
+.sign_out{
+    margin-top: 34px;
+    padding-left: 37px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.box1{
+    box-sizing: border-box;
+    height: 240px;
+    width: 77px;
+    background-color: white;
+    position: absolute;
+    right: 220px;
+    top: 275px;
+    border-radius: 7px 0 0 7px;
+    z-index: 4;
+    padding: 10px;
+    color: var(--royal-blue);
+}
+.box2{
+    height: 202px;
+    width: 90px;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 220px;
+    top: 297px;
+    border-radius: 15px 0 0 15px;
+    z-index: 1;
+
+}
+.cn{
+    margin-top: 20px;
+    font-size: 11px;
+    background-color: var(--malibu);
+    outline: none;
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+.time{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+    right: 406px;
+    top: 153px;
+    font-size: 8px;
+}
+.wifi-battry{
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+    right: 232px;
+    top: 153px;
+    font-size: 8px;
+}
+.wifi-battry img{
+    padding: 0 4px 0;
+    width: 9px;
+    height: 9px;
+    /* background-color: red; */
+}
+.navbar ul li{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 0 20px 0;
+    font-size: 17px;
+    
+}
+.navbar{
+    position: absolute;
+    top:10px;right:10px;
+}
