@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 46, 46);
+}
+.gamebody{
+    background-color: black;
+    width: 350px;
+    height: 600px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.table,tr,td{
+    text-align: center;
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 23px;
+}
+td{
+
+    width: 70px;
+    height: 70px;
+}
+table{
+    margin:  40px auto;
+}
+button{
+    background-color:rgb(156, 19, 42);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 23px;
+    border-radius: 9px;
+}
+button:hover{
+    background-color: brown;
+}
+.reset{
+    background-color:rgb(156, 19, 42);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 9px;
+}
