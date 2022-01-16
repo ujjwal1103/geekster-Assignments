@@ -1,1 +1,57 @@
-
+<html>
+<head>
+    <title>Calculator UI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        Welcome To Ujjwals World of Calculations
+    </header>
+    <section class="calculator">
+        <div class="display">
+            <p id="output"></p>
+            <button onclick="clearScreen()">C</button>
+        </div>
+        <div class="btns">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            
+                            <button onclick='numconcate("7")'>7</button>
+                            <button onclick='numconcate("8")'>8</button>
+                            <button onclick='numconcate("9")'>9</button>
+                            <button class="equal_btn" onclick='insertOp("/")'>/</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick='numconcate("4")'>4</button>
+                            <button onclick='numconcate("5")'>5</button>
+                            <button onclick='numconcate("6")'>6</button>
+                            <button class="equal_btn" onclick='insertOp("*")'>*</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick='numconcate("1")'>1</button>
+                            <button onclick='numconcate("2")'>2</button>
+                            <button onclick='numconcate("3")'>3</button>
+                            <button class="equal_btn" onclick='insertOp("-")'>-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="deleteLastDigit()">←</button>
+                            <button onclick='numconcate("0");'>0</button>
+                            <button class="equal_btn" onclick="equal()">=</button>
+                            <button class="equal_btn" onclick='insertOp("+")'>+</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
