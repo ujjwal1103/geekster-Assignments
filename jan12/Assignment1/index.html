@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Jan12 Assignment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div>
+        <button class="btn1" onclick="like()"><img src="like.png" alt=""></button>
+    <button class="btn2" onclick="unlike()"><img src="thumb-down.png" alt=""></button>
+</div>
+        <div>
+            <p type="text"  id="result"></p>
+        </div>
+    </div>
+    <script>
+        var count = 0;
+        document.getElementById("result").innerText = count;
+       function like(){
+        count = count+1;
+        var like = document.getElementById("result");
+        like.innerText = count;
+        
+          
+        }
+        function unlike(){
+            count = count-1;
+            var unlike = document.getElementById("result");
 
+            if(count==(-count)){
+            count = 0;
+            count = count+1;
+            unlike.innerText = count;
+            console.log(count);
+            }
+            
+            else{
+                unlike.innerText = count;
+            }
+         
+        }
+    </script>
+</body>
+</html>
