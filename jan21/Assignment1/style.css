@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Satisfy', cursive; */
+    list-style: none;
+    background-color: #fafafa;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+.navBar{
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    /* background-color: red; */
+    border-bottom: .5px solid #d4d0d0;
+    padding: 0px 12px ;
+    z-index: 10;
+}
+.logo_name h1{
+    font-family: 'Satisfy', cursive;
+     width: 110px;
+     font-size: 29px;
+     color: #2c2b2b;
+}
+
+
+img{
+    width: 24px;
+}
+.navItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.nav_icons{
+    width: 278px;
+}
+.nav_icons ul{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+input[type=search]{
+    width: 200px;
+    height: 36px;
+    margin-left: 20px;
+    padding: 0px 16px;
+    background-color: #efefef;
+    border-radius: 9px;
+    border: none;
+}
+#profile{
+    border-radius: 50%;
+    height: 26px;
+}
+#profile img{
+    border-radius: 50%;
+    height: 24px;
+}
+.stories{
+    border: .5px solid #d4d0d0;
+    width: 614px;
+    height: 118px;
+    margin-top: 30px;
+    margin-left:224px ;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    overflow-x: auto;
+    /* white-space: nowrap; */
+}
+.stories::-webkit-scrollbar{
+width: 4px;
+
+}
+
+.story{
+    width: 80px;
+    /* background-color: red; */
+    text-align: center;
+    
+}
+.story img{
+    cursor: pointer;
+    margin: 10px 0 0 20px ;
+    width: 56px;
+    height: 56px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid rgb(150, 22, 39);
+}
+.story label{
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+
+/* Feed */
+.feeds{
+    margin-left: 204px;
+    
+}
+.feed{
+    background-color: rgb(122, 103, 103);
+    width: 614px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: .5px solid #d4d0d0 ;
+}
+.label{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.label img{
+    margin: 10px;
+    /* padding: 10px ; */
+    /* box-sizing: content-box; */
+    border-radius: 50%;
+    width:32px ;
+    height: 32px;
+}
+.label .inid{
+    margin: 10px;
+}
+.label .p1{
+    margin-left: 210px;
+    width: 30px;
+    /* height: 10px; */
+}
+.inid span{
+    padding-bottom: 10px;
+     /* background-color: red; */
+    font-weight: 900px;
+}
+.imgfeed img{
+    width: 614px;
+    /* padding: ; */
+}
+.feedlist{
+    display: flex;
+    padding:23px 20px;
+}
+.feedlist li{
+    padding: 0 19px 0 0;
+}
+.feedlist li:nth-child(4) {
+    padding-left: 408px;
+    /* background-color: red; */
+}
+.feedlist li i{
+    font-size: 23px;
+}
+.n:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    /* background-color: red; */
+}
+.info{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.uptime{
+    color: #a7a7a7;
+    font-size: 11px;
+    
+    /* Sidebar */
+}
+.sidebar{
+    /* background-color: red; */
+    width: 400px;
+    height: 600px;
+    position: sticky;
+    top:90px;
+    left: 20px;
+   
+}
+.containt{
+    display: flex;
+}
+.pr{
+    display: flex;
+   padding: 10px 10px 20px 40px;
+    /* background-color: red; */
+    align-items: center;
+}
+.pr img{
+    width:73px;
+    height: 73px;
+    border-radius: 50%;
+}
+.pr div {
+   
+    padding-left: 20px;
+}
+.name{
+     margin-top: 52px;
+    font-weight: 400;
+    color: #a7a7a7;
+}
+.switch{
+    /* background-color: red; */
+    padding-left:90px;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgb(9, 155, 212);
+    cursor: pointer;
+
+}
+.suggestionList{
+    padding-left: 40px;
+    padding-top: 23px;
+
+}
+.suggestionList h3{
+    font-size: 14px;
+    padding-bottom: 23px;
+    color: rgb(153, 151, 151);
+}
+.lst{
+    /* background-color: red; */
+    display: flex;
+    
+    align-self: center;
+    padding: 12px 12px 0px 0;
+    cursor: pointer;
+    
+}
+.lst img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    
+}
+.lst div{
+    
+    padding-left: 13px;
+}
+.abc{
+    display: flex;
+    flex-direction: column;
+}
+.abc>span{
+    font-size: 14px;
+}
+.abc .s{
+    font-size: 12px;
+    color: #a7a7a7;
+}
+.instaab{
+    font-size: 12px;
+    padding-left: 40px;
+    padding-top: 40px;
+    color: #c0b8b8;
+}
+.instaab p:nth-child(3){
+    padding-top: 20px;
+}
