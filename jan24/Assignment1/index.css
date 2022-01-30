@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(31, 80, 60);
+}
+.center{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    color: rgb(15, 7, 43); 
+    font-weight: 900;
+    font-size: 1rem;
+}
+.bgC{
+    background-color: red;
+}
+table{
+    background-color: black;
+}
+table tr{
+    width: auto;
+}
+tr td,th{
+    background-color: antiquewhite;
+    border-radius: 3px;
+    width: 200px;
+    height: 40px;
+}
+th{
+    background-color: red;
+    color: white;
+}
