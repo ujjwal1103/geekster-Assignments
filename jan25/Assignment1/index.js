@@ -8,11 +8,6 @@ form.addEventListener("submit", submitForm);
 
 function submitForm(geek) {
   geek.preventDefault();
-  //   alert("form has been submitted");
-  //   validate(email);
-  //   validate(username);
-  //   validate(password);
-  //   validate(passwordConfirm);
   checkUserName(username);
   checkEmail(email);
   checkPassword(password);
@@ -20,17 +15,7 @@ function submitForm(geek) {
   
 }
 
-// function validate(element) {
-//   var nameOfUser = element.value;
-//   if (nameOfUser === "geekster") {
-//     var formControl = element.parentElement;
-//     formControl.className = "form-control success";
-//   } else {
-//     var formControl = element.parentElement;
-//     formControl.className = "form-control failure";
-//     formControl.querySelector("small").innerText = "this is invalid";
-//   }
-// }
+
 
 function checkUserName(element) {
   var nameOfUser = element.value;
@@ -39,6 +24,31 @@ function checkUserName(element) {
   } else {
     onSuccess(element);
   }
+}
+function checkPassword(element) {
+  var spchar = [ "@","!", "#"];
+  var passwordValue = element.value;
+  for( i=0; i< spchar.length ; i++) {
+
+    if (passwordValue === "") {
+      setError(element, "Password cannot be empty");
+    }
+     else if(!passwordValue.includes(spchar[0])) {
+        setError(element, "password Should contain @ ");
+     } 
+     else if(!passwordValue.includes(spchar[1])){
+      setError(element, "password Should contain !");
+     }
+     else if(!passwordValue.includes(spchar[2])){
+      setError(element, "password Should contain #");
+     }
+     else if(!passwordValue.length>=6){
+      setError(element, "password Length Should be greater than 6  ");
+     }
+     else {
+        onSuccess(element); 
+     }
+  }   
 }
 
 function checkEmail(element) {
@@ -52,20 +62,7 @@ function checkEmail(element) {
   }
 }
 
-function checkPassword(element) {
-  var specialCharacter = ["!", "@", "#"];
-  var passwordValue = element.value;
-  if (passwordValue === "") {
-    setError(element, "password cannot be empty");
-  }
-  else if(passwordValue.length < 8){
-      if(specialCharacter.indexOf)
-      setError(element, "Password lenght should be more than 8 charcter")
-  }
-  else {
-    onSuccess(element);
-  }
-}
+
 
 function checkConfirmPassword(element) {
   var passwordValue = password.value;
