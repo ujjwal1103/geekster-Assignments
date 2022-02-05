@@ -6,10 +6,5 @@ for (let i = 0 ;i<arr.length;i++){
     if(arr[i]+arr[i+1]=== tar){
         output.innerHTML =` ${arr[i]} , ${arr[i+1]}`;
     }
-    else{
-        alert("Target sum not found")
-        output.innerHTML =` Target sum not found`
-        output.style.color = "red"
-        break;
-    }
+    
 }
