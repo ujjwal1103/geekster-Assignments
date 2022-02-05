@@ -13,6 +13,3 @@ for (let i = 0 ;i<arr.length;i++){
         break;
     }
 }}
-else{
-    alert("target should be Less Than 20")
-}
