@@ -11,7 +11,8 @@ searchBox.addEventListener('keyup',()=>{
 })
 let loading = ()=>{
     removeImg();
-    let url = 'https://api.unsplash.com/search/photos?query='+searchBox.value+'&per_page=30&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo';
+    let url = `https://api.unsplash.com/search/photos?query=
+    ${searchBox.value}&per_page=30&client_id=qSR_ZSw8UoENRyEPRgXQfMnhigeF4EBlnJqBk4etfGk`;
     fetch(url)
     .then(res =>{
         if(res.ok){
