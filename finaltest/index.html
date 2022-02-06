@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogApp</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav class="navBar">
+                <ul>
+                    <li><h1>Blog</h1></li>
+                   
+                   
+                </ul>
+            </nav>
+        </header>
+        <div class="createBlog"  id="myform" onsubmit="add()"> 
+            <form action="#">
+            <h3>Write your blog here</h3>
+            <label for="title">Title:</label><br>
+            <input type="text" placeholder="write title of blog" id="name" >
+            <br/>
+            <input type="file" name="img" id="imgupload" accept="image/*" >
+            <div class="textbox">
+            <label>Description:</label><br>
+            <textarea name="des" id="des" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="Upload blog">
+        </form>
+        </div>
+        
+        <div class="blogs" id="blogs">
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
